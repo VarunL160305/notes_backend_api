@@ -48,7 +48,7 @@ class ExpressError extends Error{
 // RateLimiting 
 const noteRateLimiter=rateLimit({
     windowMs:60*1000,
-    max:5,
+    limit:5,
     message:{
         error:"Too many note creation, Wait for some time"
     }
